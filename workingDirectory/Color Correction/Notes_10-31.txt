@@ -1,0 +1,16 @@
+I have gone ahead and added my current progress for color correction in this folder. I have also added an example test image, reference image, and output image.
+
+I have created an outline for color correction that utilizes all four pantone cards.
+This outline uses the corners of the entire image rather than the location of the pantones to reference the distance to each pantone.
+Will implement the ArUcos to reference the pantones in the future, just wanted to create a baseline.
+
+The easiest way to integrate the tutorial code with all four pantones was to create four separate corrected images and weight each pixel's rgb value based on the distances to the corners.
+This current method takes my computer approximately four minutes to correct a single image.
+My processor is fairly decent so a faster method will likely need to be explored.
+
+For the output image, it appears that there is a tint of green on the upper right corner. There is some shading apparent in the test image that this could be from.
+This issue might be able to be resolved when I implement the ArUcos for corner position.
+
+Lastly, I have gone a little excessive with the tinkering of the parameters that I have lost some consistency with detecting the pantones.
+Should not take too much time to fine tune them a little more to get back to the roughly 90% pantone detection I was at before
+However, this is no longer my priority as I am more focused on fully developing the color correction.
